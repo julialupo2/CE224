@@ -1,0 +1,20 @@
+import math
+
+a = 1
+b = 2
+c = 1
+
+# Calculate the discriminant
+d = b ** 2 - 4 * a * c
+
+# Check if the discriminant is negative, zero, or positive
+if d < 0:
+    print("This equation has no real solutions.")
+elif d == 0:
+    x = -b / (2 * a)
+    print("This equation has one solution: x =", x)
+else:
+    x1 = (-b + math.sqrt(d)) / (2 * a)
+    x2 = (-b - math.sqrt(d)) / (2 * a)
+    print("This equation has two solutions: x =", x1, "and x =", x2)
+
